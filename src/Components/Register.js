@@ -64,9 +64,9 @@ const Register = () => {
                                     
                         <form onSubmit={handleRegister}>   
                             <Stack spacing={3}>
-                                <TextField label="Enter Name" type="name" value={name} onChange={(e) => setName(e.target.value)} fullWidth required />
-                                <TextField label="Enter Email Id" type="email" value={email} onChange={(e) => setEmail(e.target.value)} fullWidth required />
-                                <TextField label="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} fullWidth required />
+                                <TextField data-testid="enter-name" label="Enter Name" type="name" value={name} onChange={(e) => setName(e.target.value)} fullWidth required />
+                                <TextField data-testid="enter-email" label="Enter Email Id" type="email" value={email} onChange={(e) => setEmail(e.target.value)} fullWidth required />
+                                <TextField data-testid="enter-pass" label="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} fullWidth required />
                                 <Button type="submit" variant="contained" color="primary" sx={{textTransform:"none", fontWeight:"600"}} fullWidth>Register</Button>
                             </Stack>
                         </form>

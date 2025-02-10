@@ -2,7 +2,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import AddData from '../Components/AddData';
 
 describe("Add Data components testings",()=>{
-    test('renders Button with correct label', () => {
+    test('renders data test id correct', () => {
         render(<AddData />);
 
         const addDataFile = screen.getByTestId('add-data')

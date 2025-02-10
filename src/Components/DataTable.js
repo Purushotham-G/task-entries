@@ -94,6 +94,7 @@ const DataTable = () => {
             <Typography sx={{ fontWeight: "bold", fontSize: "18px" }}>Customer List</Typography>
             <Box sx={{display:"flex", justifyContent:"space-between", alignItems:"center", pl:2, pr:2}}>
               <TextField
+                  data-testid="searching-data"
                   label="Searching"
                   variant="outlined"
                   margin="normal"

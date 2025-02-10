@@ -6,7 +6,6 @@ import Register from './Components/Register';
 import AddData from './Components/AddData';
 import DataTable from './Components/DataTable';
 import { createContext, useState } from 'react';
-import Demo from './Components/Demo';
 
 export let userContext = createContext();
 
@@ -24,7 +23,6 @@ const App = () => {
             <Route path='/register' element={<Register />} />
             <Route path='/addData' element={<AddData />} />
             <Route path='/dataTable' element={<DataTable />} />
-            <Route path='/demo' element={<Demo />} />
           </Routes>
         </BrowserRouter>
     </userContext.Provider>
